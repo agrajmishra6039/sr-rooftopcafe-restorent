@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SR Rooftop Café and restaurant — specialty coffee, slow mornings, and a lantern-lit corner in the city."
+    />
+    <title>SR Rooftop Café and restaurant — Coffee, Calm & Conversation</title>
+
+    <!-- Google Fonts: elegant serif headings + clean sans-serif body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Skip link helps keyboard users jump past the sticky navbar -->
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <!-- ===================== HEADER / NAV ===================== -->
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <a class="logo" href="#home">
+          <span class="logo-mark" aria-hidden="true">SR</span>
+          SR Rooftop Café and restaurant
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul id="nav-menu" class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===================== HERO ===================== -->
+      <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Rooftop dining, Haridwar</p>
+          <h1>Where the evening feels slower, and the star feel closer.</h1>
+          <p class="tagline">
+            Fresh food, good vibes, and evening under the sky — a place you’ll want to
+            come back for.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">View Menu</a>
+            <a class="btn btn-ghost" href="#contact">Visit Us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== MENU ===================== -->
+      <section id="menu" class="section menu-section">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Our menu</p>
+            <h2>Today’s menu</h2>
+            <p>
+              Fresh food, cold drinks, and something sweet to end the evening
+              with a long conversation.
+            </p>
+          </header>
+
+          <!-- Category tabs: JavaScript filters cards by data-category -->
+          <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+            <button class="tab is-active" type="button" role="tab" aria-selected="true" data-filter="all">
+              All
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-filter="Starters">
+              Starters
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-filter="main course">
+              Main course
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-filter="drinks">
+              Drinks
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-filter="desserts">
+              Desserts
+            </button>
+          </div>
+
+          <div class="menu-grid" id="menu-grid">
+            <article class="menu-card" data-category="Starters">
+              <h3>Mushroom Salt Pepper</h3>
+              <p class="price">Rs. 430</p>
+            </article>
+            <article class="menu-card" data-category="Starters">
+              <h3>Manchurian Dry.</h3>
+              <p class="price">Rs. 260</p>
+            </article>
+            <article class="menu-card" data-category="Starters">
+              <h3>Sauteed Veggie.</h3>
+              <p class="price">Rs. 440</p>
+            </article>
+            <article class="menu-card" data-category="Starters">
+              <h3>Honey Chillu Potato</h3>
+              <p class="price">Rs. 380</p>
+            </article>
+            <article class="menu-card" data-category="main course">
+              <h3>Manchurian Gravy</h3>
+              <p class="price">Rs. 280</p>
+            </article>
+            <article class="menu-card" data-category="main course">
+              <h3>Dal Tadka</h3>
+              <p class="price">Rs. 280</p>
+            </article>
+            <article class="menu-card" data-category="main course">
+              <h3>Dal Makhani</h3>
+              <p class="price">Rs. 380</p>
+            </article>
+            <article class="menu-card" data-category="drinks">
+              <h3>Mango Magic Mocktail</h3>
+              <p>Non Alcoholic</p>
+              <p class="price">Rs. 170</p>
+            </article>
+            <article class="menu-card" data-category="drinks">
+              <h3>Blueberry Mocktail</h3>
+              <p>Non Alcoholic</p>
+              <p class="price">Rs. 180</p>
+            </article>
+            <article class="menu-card" data-category="drinks">
+              <h3>Mint Mojito</h3>
+              <p>Alcoholic</p>
+              <p class="price">Rs. 150</p>
+            </article>
+            <article class="menu-card" data-category="desserts">
+              <h3>Rice Kheer</h3>
+              <p class="price">Rs. 120</p>
+            </article>
+            <article class="menu-card" data-category="desserts">
+              <h3>Gulab Jamun.(2 pieces)</h3>
+              <p class="price">Rs. 90</p>
+            </article>
+            <article class="menu-card" data-category="desserts">
+              <h3>Saffron Panna Cotta</h3>
+              <p class="price">Rs. 240</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== ABOUT ===================== -->
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <figure class="about-photo">
+            <img
+              src="cafe rooftop.jpeg"
+              alt="Warm cafe interior with wooden tables, pendant lights, and guests talking over coffee"
+            />
+            <figcaption>Your evening, a little higher.</figcaption>
+          </figure>
+
+          <div class="about-copy">
+            <p class="eyebrow">Our story</p>
+            <h2>Dining above the city.</h2>
+            <p>
+              SR Rooftop Cafe and Restaurant is a rooftop spot in Haridwar,
+              made for relaxing evenings, long conversations with friends and family
+              come for the food, stay for the open sky and soft light
+              best for all occasions anniversary, birthday party, and romantic dates .
+            </p>
+            <p>
+              Come for a pour-over, stay for the quiet. The seats by the window
+              are first-come, first-daydreamed.
+            </p>
+
+            <ul class="highlights">
+              <li>
+                <span class="highlight-icon" aria-hidden="true">◎</span>
+                <div>
+                  <h3>Fresh Food</h3>
+                  <p>Cooked fresh to order, from starter to dessert.</p>
+                </div>
+              </li>
+              <li>
+                <span class="highlight-icon" aria-hidden="true">⌂</span>
+                <div>
+                  <h3>candlelight evenings</h3>
+                  <p>Soft lights and a quiet setting made for date nights and celebration.</p>
+                </div>
+              </li>
+              <li>
+                <span class="highlight-icon" aria-hidden="true">⌁</span>
+                <div>
+                  <h3>cozy seating</h3>
+                  <p>Open rooftop seating, good for couples, families and small groups.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== GALLERY ===================== -->
+      <section id="gallery" class="section gallery-section">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Through the window</p>
+            <h2>Gallery</h2>
+            <p>Few images of food and drink we serve, come to use and enjoy more variety of food.</p>
+          </header>
+
+          <div class="gallery-grid">
+            <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80">
+              <img
+                src="food1.jpeg"
+                alt="Hands wrapping around a ceramic cup of coffee"
+              />
+            </button>
+            <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80">
+              <img
+                src="food2.jpeg"
+                alt="Close-up of espresso crema in a white cup"
+              />
+            </button>
+            <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1442512595331-e89e73840625?auto=format&fit=crop&w=1600&q=80">
+              <img
+                src="food3.jpeg"
+                alt="Coffee beans roasting with steam rising"
+              />
+            </button>
+            <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1600&q=80">
+              <img
+                src="food4.jpeg"
+                alt="Barista pouring latte art into a cup"
+              />
+            </button>
+            <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1453614512568-7af2e654302d?auto=format&fit=crop&w=1600&q=80">
+              <img
+                src="https://images.unsplash.com/photo-1453614512568-7af2e654302d?auto=format&fit=crop&w=800&q=80"
+                alt="Cafe pastry display with croissants and cakes"
+              />
+            </button>
+            <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1600&q=80">
+              <img
+                src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80"
+                alt="Friends talking at a sunlit cafe table"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox: hidden until a gallery image is clicked -->
+      <div class="lightbox" id="lightbox" hidden>
+        <button class="lightbox-close" type="button" aria-label="Close lightbox">
+          ×
+        </button>
+        <img id="lightbox-image" alt="" />
+      </div>
+
+      <!-- ===================== REVIEWS ===================== -->
+      <section id="reviews" class="section reviews-section">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Guest book</p>
+            <h2>Reviews</h2>
+            <p>A few notes left on napkins, maps, and our little guestbook.</p>
+          </header>
+
+          <div class="slider" aria-roledescription="carousel" aria-label="Customer reviews">
+            <div class="slider-track">
+              <blockquote class="review-slide is-active">
+                <p>
+                  “Nice romantic vibe best for couple candle light dinner
+                  delicious food with hygiene.”
+                </p>
+                <footer>
+                  <cite>vanshika Negi</cite>
+                  <span>Romantic dates</span>
+                </footer>
+              </blockquote>
+              <blockquote class="review-slide">
+                <p>
+                  “tremendous  vibe open air seating, great food and drinks. The
+                  staff is friendly and attentive as well as.”
+                </p>
+                <footer>
+                  <cite>Narinder singh</cite>
+                  <span>local validation</span>
+                </footer>
+              </blockquote>
+              <blockquote class="review-slide">
+                <p>
+                  “Had an incredible time at SR Rooftop Cafe and Restaurant!
+                  The rooftop setup is gorgeous, making it an idel spot for romantic evenings, date with your partner as well as
+                  fun rooftop parties with friends. Both veg, non veg menus offers mouth-watering options. ”
+                </p>
+                <footer>
+                  <cite>Rahul Rawat.</cite>
+                  <span>Regular · Haridwar</span>
+                </footer>
+              </blockquote>
+            </div>
+
+            <div class="slider-controls">
+              <button class="slider-btn" type="button" data-dir="-1" aria-label="Previous review">
+                ←
+              </button>
+              <div class="slider-dots" role="tablist" aria-label="Choose a review"></div>
+              <button class="slider-btn" type="button" data-dir="1" aria-label="Next review">
+                →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== CONTACT ===================== -->
+      <section id="contact" class="section contact-section">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <p class="eyebrow">Find us</p>
+            <h2>Visit SR Rooftop</h2>
+            <p>
+              We take walk-ins and a few reserved tables. Send an enquiry below
+              and we will write back the same day.
+            </p>
+
+            <address>
+              <p>
+                <strong>Address</strong><br />
+                Navoday nagar, Anneki Road<br />
+                Sidcul, Haridwar 249412
+              </p>
+              <p>
+                <strong>Phone</strong><br />
+                <a href="tel:+919690462001">+91 96904 62001</a>
+              </p>
+              <p>
+                <strong>Opening hours</strong><br />
+                Mon–Thu: 10:00 am – 11:00 pm<br />
+                Fri–Sun: 10:00 am – 11:00 pm
+              </p>
+            </address>
+
+            <!-- Placeholder map: replace src with a real Google Maps embed later -->
+            <div class="map-frame">
+              <iframe
+                title="Map showing SR Rooftop, Haridwar"
+                src="https://maps.google.com/maps?q=SR%20Rooftop%20Cafe%20Haridwar&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <form class="booking-form" id="booking-form" novalidate>
+            <h3>Enquire or book a table</h3>
+
+            <label>
+              Name
+              <input type="text" name="name" id="name" autocomplete="name" required />
+              <span class="error" data-error-for="name"></span>
+            </label>
+
+            <label>
+              Phone
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                autocomplete="tel"
+                inputmode="tel"
+                required
+              />
+              <span class="error" data-error-for="phone"></span>
+            </label>
+
+            <label>
+              Date
+              <input type="date" name="date" id="date" required />
+              <span class="error" data-error-for="date"></span>
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" id="message" rows="4" required></textarea>
+              <span class="error" data-error-for="message"></span>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Send enquiry</button>
+            <p class="form-success" id="form-success" hidden>
+              Thank you. We have your note and will confirm by phone shortly.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="#home">
+            <span class="logo-mark" aria-hidden="true">SR</span>
+            SR Rooftop
+          </a>
+          <p>Rooftop cafe in hariwar.</p>
+        </div>
+
+        <nav aria-label="Footer">
+          <h2>Quick links</h2>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2>Social</h2>
+          <ul class="socials">
+            <li>
+              <a href="https://www.instagram.com/sr.rooftop?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <a href="http://zoma.to/r/22822267" rel="noopener noreferrer" target="_blank">Zomato</a>
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/y63T7ixLRHKg6w8v8" rel="noopener noreferrer" target="_blank">Maps</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2026 SR Rooftop Café. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
